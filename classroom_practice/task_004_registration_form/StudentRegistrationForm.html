@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h1 align="center">Student Registration Form</h1>
+
+    <form>
+
+        <table border="1" width="80%" align="center" cellpadding="10">
+
+            <tr>
+                <th colspan="2">Registration Form</th>
+            </tr>
+
+            <tr>
+                <td><label for="Full Name"><b>Full Name</b></label></td>
+                <td>
+                    <input id="Full Name" type="text"
+                           name="name"
+                           placeholder="Enter your name">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Email"><b>Email</b></label></td>
+                <td>
+                    <input id="Email" type="email"
+                           name="email"
+                           placeholder="xyz@gmail.com">
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td><label for="Phone Number"><b>Phone Number</b></label></td>
+                <td>
+                    <input id="Phone Number" type="tel"
+                           name="phone"
+                           placeholder="0123456789">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Date of Birth"><b>Date of Birth</b></label></td>
+                <td>
+                    <input id="Date of Birth" type="date" name="dob">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label><b>Gender</b></label></td>
+                <td>
+                    <input id="male" type="radio" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input id="female" type="radio" name="gender" value="female">
+                    <label for="female">Female</label>
+
+                    <input id="other" type="radio" name="gender" value="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label><b>Skills</b></label></td>
+                <td>
+                    <input id="html" type="checkbox" name="skills" value="html">
+                    <label for="html">HTML</label>
+
+                    <input id="css" type="checkbox" name="skills" value="css">
+                    <label for="css">CSS</label>
+
+                    <input id="javascript" type="checkbox" name="skills" value="javascript">
+                    <label for="javascript">JavaScript</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label><b>Course</b></label></td>
+                <td>
+                    <select name="course">
+                        <option value="">Select Course</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="bca">BCA</option>
+                        <option value="mca">MCA</option>
+                        <option value="bsc">B.Sc</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label><b>Address</b></label></td>
+                <td>
+                    <textarea name="address" rows="4" cols="30"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Upload Resume</b></td>
+                <td>
+                    <input type="file" name="resume">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+</html>
