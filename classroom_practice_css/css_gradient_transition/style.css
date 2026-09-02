@@ -1,0 +1,47 @@
+
+
+.container{
+    width: 400px;
+    height: 500px;
+    border:1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    border:1px solid black;
+    background-color:red;
+    text-align: center;
+    color:white;
+    /* background-image: linear-gradient(to 
+    right bottom,red,blue); */
+    /* background-image: repeating-linear-gradient(125deg,
+    red 0% 20%,blue 20% 40%); */
+
+    background-image: repeating-radial-gradient(
+        red 0% 20%,blue 20% 40%);
+        /* transition-property:transform;
+        transition-duration:1s ;
+        transition-timing-function:ease ; */
+        transition:transform 3s ease;
+   
+    
+}
+.card:hover{
+     box-shadow: -10px -10px 25px  red, 
+    10px 10px 25px blue;
+    /* transform:translateX(-50px); */
+    /* transform: scale(1.1); */
+    /* transform:rotate(360deg); */
+    /* transform:translate(50px ,-50px) scale(1.6) rotate(367454545484784548478478480deg);  */
+    transform:skew(-20deg,-20deg);
+    /* translate()
+    rotate()
+    scale() 
+    skew()*/
+
+}
